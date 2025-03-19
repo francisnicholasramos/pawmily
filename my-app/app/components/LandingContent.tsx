@@ -3,11 +3,13 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "./Button"; // custom reusable button
 import Puppy from '@/assets/images/puppy.png';
+import Puppies from '@/assets/images/two-puppies.png';
 
 const LandingContent = () => {
   return (
-    <div>
-      <div className="flex flex-col mx-[125px] py-[100px] gap-[100px]">
+    <div className="flex mx-auto">
+      {/* div1 */}
+      <div className="flex flex-col ml-[125px] py-[100px] gap-[100px]">
         <div className="max-w-[700px] mb-[-80]">
           <h2 className="text-[28px]">LOREM IPSUM DOLORES</h2>
 
@@ -40,6 +42,17 @@ const LandingContent = () => {
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* div2 */}
+      <div className="flex md:mr-[125px]">
+        <Image 
+          className="object-cover"
+          src={Puppies}
+          width={1100}
+          height={0}
+          alt="two-puppies"
+        />
       </div>
     </div>
   );
