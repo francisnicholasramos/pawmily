@@ -19,6 +19,7 @@ const Navbar = () => {
         <Link href="#" className='links'>PawStories</Link>
         <Link href="#" className='links'>PawMatch</Link>
         <Link href="#" className='links'>More</Link>
+        <Link href="../adopt" className='links'>Adoption</Link>
       </div>
 
       <div className='flex items-center gap-[30px]'>
