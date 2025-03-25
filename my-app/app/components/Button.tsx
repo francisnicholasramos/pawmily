@@ -12,11 +12,9 @@ const Button = ({ variant = 'primary', children, className }: ButtonProps) => {
   };
 
   return (
-    <div className="button-container">
       <button className={`${variants[variant]} ${className}`}>
         {children}
       </button>
-    </div>
   );
 };
 
