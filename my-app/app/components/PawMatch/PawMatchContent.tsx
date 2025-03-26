@@ -5,7 +5,6 @@ import { MdClose } from "react-icons/md";
 import Card from "./Card";
 import cardData from "@/app/paw-match/cardData";
 import Button from "../Button";
-import { motion, useMotionValue, useTransform } from "framer-motion";
 
 const PawMatchContent = () => {
   const [cards, setCards] = useState<Card[]>(cardData);
