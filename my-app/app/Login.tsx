@@ -1,13 +1,11 @@
-import React from 'react'
-import Image from 'next/image'
-import Button from './components/Button'
-import SilverDog from '@/assets/images/silver-retriever.png'
-import Logo from '@/assets/images/logo.png'
-import { FaGoogle } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { ImYahoo } from "react-icons/im";
-import '@/assets/styles/login.css'
-import { url } from 'inspector'
+import React from 'react';
+import Image from 'next/image';
+import Button from './components/Button'; // Ensure this is correct
+import SilverDog from '@/assets/images/silver-retriever.png';
+import Logo from '@/assets/images/logo.png';
+import { FaGoogle } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+import { ImYahoo } from 'react-icons/im';
 
 const Login = () => {
   return (
@@ -36,6 +34,12 @@ const Login = () => {
 
             <br />
 
+            <div className='flex rounded-full bg-[#ede8e4]'>
+              <Button className='w-full flex justify-center rounded-full shadow-none py-3'>Login</Button>
+              <Button className='w-full flex justify-center rounded-full shadow-none py-3 text-black bg-[#ede8e4] hover:bg-[#ede8e4]'>Sign Up</Button>
+            </div>
+
+            <br />
 
             <div className='w-full'>
               <form className='flex flex-col'>
@@ -77,7 +81,7 @@ const Login = () => {
         </div>
 
         <div 
-          className='rounded-tr-3xl rounded-br-3xl'
+          className='rounded-tr-3xl rounded-br-3xl ml-[-7]'
           style={{
             backgroundImage: `url(${SilverDog.src})`,
             backgroundSize: 'cover',
